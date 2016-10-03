@@ -1,5 +1,5 @@
 # The FROM will be replaced when building in OpenShift
-FROM rhel7/rhel
+FROM docker.io/centos:7
 
 MAINTAINER Siamak Sadeghianfar <ssadeghi@redhat.com>
 
