@@ -4,8 +4,12 @@ FROM docker.io/centos:7
 MAINTAINER Siamak Sadeghianfar <ssadeghi@redhat.com>
 
 USER root
+
+RUN curl -O https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm && \ 
+    rpm -Uvh epel-release-latest-7*.rpm && \
+    rm epel-release-latest-7*.rpm
+
 RUN yum clean all && \
-    yum install -y epel-release && \
     export INSTALL_PKGS="nss_wrapper java-1.8.0-openjdk-headless \
         java-1.8.0-openjdk-devel nss_wrapper gettext tar git" && \
     yum clean all && \
