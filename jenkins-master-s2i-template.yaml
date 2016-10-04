@@ -101,7 +101,7 @@ objects:
         from:
           kind: ImageStreamTag
           name: jenkins-s2i-master-base:latest
-          namespace: openshift
+          namespace: ci
       type: Source
     triggers:
     - type: ConfigChange
