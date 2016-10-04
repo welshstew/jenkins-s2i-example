@@ -1,4 +1,6 @@
-git:2.4.4
+git:3.0.0
+groovy:1.29
 scm-api:1.0
 git-client:1.19.6
 greenballs:1.15
+openshift-pipeline:1.0.22

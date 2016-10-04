@@ -4,7 +4,7 @@
       <!--This sends everything else to /public -->
       <id>nexus</id>
       <mirrorOf>*</mirrorOf>
-      <url>http://10.1.2.4:8081/nexus/content/groups/public/</url>
+      <url>http://nexus-ci.rhel-cdk.10.1.2.2.xip.io/content/groups/public/</url>
     </mirror>
   </mirrors>
   <profiles>
